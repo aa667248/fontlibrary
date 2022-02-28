@@ -5,18 +5,55 @@
         <link rel="stylesheet" href="fontstyle.css">
     </head>
     <body>
-        <h2 id="font1">Chalk-JP</h2><style>#font1{font-family: 'Chalk-JP'}</style>
-<h2 id="font2">FGNEWMIRAIREN</h2><style>#font2{font-family: 'FGNEWMIRAIREN'}</style>
-<h2 id="font3">Geo-Regular</h2><style>#font3{font-family: 'Geo-Regular'}</style>
-<h2 id="font4">GLT-GonunneStroke-310MediumLight</h2><style>#font4{font-family: 'GLT-GonunneStroke-310MediumLight'}</style>
-<h2 id="font5">hexameteor</h2><style>#font5{font-family: 'hexameteor'}</style>
-<h2 id="font6">Hitchhiker</h2><style>#font6{font-family: 'Hitchhiker'}</style>
-<h2 id="font7">Kaisotai-Next-UP-B</h2><style>#font7{font-family: 'Kaisotai-Next-UP-B'}</style>
-<h2 id="font8">mogihaPen</h2><style>#font8{font-family: 'mogihaPen'}</style>
-<h2 id="font9">MRT-すぷめら mini</h2><style>#font9{font-family: 'MRT-すぷめら mini'}</style>
-<h2 id="font10">Tr2n</h2><style>#font10{font-family: 'Tr2n'}</style>
-<h2 id="font11">ZenKakuGothicAntique-Medium</h2><style>#font11{font-family: 'ZenKakuGothicAntique-Medium'}</style>
-<h2 id="font12">ゆず ペン懐 [M]</h2><style>#font12{font-family: 'ゆず ペン懐 [M]'}</style>
-<h2 id="font13">数式フォントver1.4</h2><style>#font13{font-family: '数式フォントver1.4'}</style>
+        <style>
+            h2{
+                font-size: 35px;
+                margin: 10px;
+            }
+            .button{
+                display: block;
+                float: left;
+                border: 0;
+                padding: 0;
+                width: 50px;
+                height: 27px;
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+            }
+            .text{
+                display: block;
+                border: 0;
+                padding: 0;
+                width: 500px;
+                height: 25px;
+                font-size: 25px;
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+            }
+            .text:focus{
+                outline: none;
+            }
+        </style>
+        <script>
+            function clipboard(IDname){
+              var text = document.getElementById(IDname).innerText;
+              navigator.clipboard.writeText(text).then(e => {
+                  alert('Copy : '+text)
+              });
+            }
+        </script>
+        <h2 id="font1" class="font1">Chalk-JP</h2><style>.font1{font-family: 'Chalk-JP'}</style><input type="button"onclick="clipboard('font1')" class="button"><input type="text" class="text font1"></inpyt>
+        <h2 id="font2" class="font2">FGNEWMIRAIREN</h2><style>.font2{font-family: 'FGNEWMIRAIREN'}</style><input type="button"onclick="clipboard('font2')" class="button"><input type="text" class="text font2"></inpyt>
+        <h2 id="font3" class="font3">Geo-Regular</h2><style>.font3{font-family: 'Geo-Regular'}</style><input type="button"onclick="clipboard('font3')" class="button"><input type="text" class="text font3"></inpyt>
+        <h2 id="font4" class="font4">GLT-GonunneStroke-310MediumLight</h2><style>.font4{font-family: 'GLT-GonunneStroke-310MediumLight'}</style><input type="button"onclick="clipboard('font4')" class="button"><input type="text" class="text font4"></inpyt>
+        <h2 id="font5" class="font5">hexameteor</h2><style>.font5{font-family: 'hexameteor'}</style><input type="button"onclick="clipboard('font5')" class="button"><input type="text" class="text font5"></inpyt>
+        <h2 id="font6" class="font6">Hitchhiker</h2><style>.font6{font-family: 'Hitchhiker'}</style><input type="button"onclick="clipboard('font6')" class="button"><input type="text" class="text font6"></inpyt>
+        <h2 id="font7" class="font7">Kaisotai-Next-UP-B</h2><style>.font7{font-family: 'Kaisotai-Next-UP-B'}</style><input type="button"onclick="clipboard('font7')" class="button"><input type="text" class="text font7"></inpyt>
+        <h2 id="font8" class="font8">mogihaPen</h2><style>.font8{font-family: 'mogihaPen'}</style><input type="button"onclick="clipboard('font8')" class="button"><input type="text" class="text font8"></inpyt>
+        <h2 id="font9" class="font9">MRT-すぷめら mini</h2><style>.font9{font-family: 'MRT-すぷめら mini'}</style><input type="button"onclick="clipboard('font9')" class="button"><input type="text" class="text font9"></inpyt>
+        <h2 id="font10" class="font10">Tr2n</h2><style>.font10{font-family: 'Tr2n'}</style><input type="button"onclick="clipboard('font10')" class="button"><input type="text" class="text font10"></inpyt>
+        <h2 id="font11" class="font11">ZenKakuGothicAntique-Medium</h2><style>.font11{font-family: 'ZenKakuGothicAntique-Medium'}</style><input type="button"onclick="clipboard('font11')" class="button"><input type="text" class="text font11"></inpyt>
+        <h2 id="font12" class="font12">ゆず ペン懐 [M]</h2><style>.font12{font-family: 'ゆず ペン懐 [M]'}</style><input type="button"onclick="clipboard('font12')" class="button"><input type="text" class="text font12"></inpyt>
+        <h2 id="font13" class="font13">数式フォントver1.4</h2><style>.font13{font-family: '数式フォントver1.4'}</style><input type="button"onclick="clipboard('font13')" class="button"><input type="text" class="text font13"></inpyt>
     </body>
 </html>
