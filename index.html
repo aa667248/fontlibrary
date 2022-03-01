@@ -34,6 +34,15 @@
             .text:focus{
                 outline: none;
             }
+            i{
+                display: block;
+                border: 0;
+                padding: 0;
+                width: 550px;
+                height: 25px;
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+            }
         </style>
         <script>
             function clipboard(IDname){
@@ -43,6 +52,8 @@
               });
             }
         </script>
+        <h1>フォント試し書き</h1>
+        <p id="code">&lt;link rel="stylesheet" href="https://aa667248.github.io/fontlibrary/fontstyle.css">&lt;/link></p><input type="button"onclick="clipboard('code')" class="button"><i>これをHTMLに記述し、cssのfont-familyで指定</i>
 <h2 class="font1">チョーク体</h2><p id="font1">Chalk-JP</p><style>.font1{font-family: 'Chalk-JP'}</style><input type="button"onclick="clipboard('font1')" class="button"><input type="text" class="text font1"></inpyt>
 <h2 class="font2">FGNEWMIRAIREN</h2><p id="font2">FGNEWMIRAIREN</p><style>.font2{font-family: 'FGNEWMIRAIREN'}</style><input type="button"onclick="clipboard('font2')" class="button"><input type="text" class="text font2"></inpyt>
 <h2 class="font3">Geo</h2><p id="font3">Geo-Regular</p><style>.font3{font-family: 'Geo-Regular'}</style><input type="button"onclick="clipboard('font3')" class="button"><input type="text" class="text font3"></inpyt>
